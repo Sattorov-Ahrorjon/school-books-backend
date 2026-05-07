@@ -1,3 +1,4 @@
+import django_filters
 from rest_framework import serializers
 from .models import Class, Category, Book
 
@@ -24,3 +25,12 @@ class BookSerializer(serializers.ModelSerializer):
             'id', 'name', 'image', 'about', 'publication', 'file', 'class_name',
             'class_name_str', 'category', 'category_str'
         )
+
+
+class BookFilter(django_filters.FilterSet):
+    class_name = django_filters.NumberFilter()
+    category = django_filters.NumberFilter()
+
+    class Meta:
+        model = Book
+        fields = ('class_name', 'category')
