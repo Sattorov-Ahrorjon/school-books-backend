@@ -135,7 +135,7 @@ SPECTACULAR_SETTINGS = {
 
     # SERVERS
     'SERVERS': [
-        {'url': 'https://api.myproject.com', 'description': 'Production'},
+        {'url': 'http://5.189.190.231:8001', 'description': 'Production'},
         {'url': 'http://localhost:8000', 'description': 'Local'},
     ],
 
