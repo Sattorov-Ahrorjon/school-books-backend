@@ -1,7 +1,7 @@
 # Django loyihasini ishga tushirish uchun port va host
 bind = "0.0.0.0:8001"
 
-workers = 1
+workers = 2
 
 # Ish jarayonlari turi (sync, gevent, eventlet)
 worker_class = "sync"  # Tezlikni oshirish uchun gevent yoki eventletni sinab ko'rishingiz mumkin
